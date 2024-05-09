@@ -1,0 +1,111 @@
+/* Estilos básicos para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px; /* Evita sobreposição com o rodapé */
+}
+
+header {
+    /* Gradiente de cor para o cabeçalho */
+    background: linear-gradient(to right, #422f88, #9a193d);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o formulário de contato */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.container form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; /* Definindo a mesma fonte para todo o formulário */
+    font-size: 18px; /* Tamanho do texto aumentado */
+}
+
+.container form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px; /* Tamanho do texto aumentado */
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="tel"],
+.container form textarea {
+    width: calc(100% - 20px); /* Espaço uniforme à esquerda e à direita */
+    padding: 10px;
+    margin-bottom: 20px; /* Aumente o espaçamento inferior */
+    margin-top: 20px; /* Adicione espaçamento superior */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Tamanho do texto aumentado */
+}
+
+.container form .sexo {
+    margin-bottom: 20px; /* Ajuste do espaçamento entre os elementos */
+}
+
+.container form .sexo p {
+    margin-bottom: 5px;
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 5px; /* Espaço entre rótulos */
+    font-size: 18px; /* Tamanho do texto aumentado */
+}
+
+.container form .sexo label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.container form .sexo input[type="radio"] {
+    display: inline-block;
+}
+
+.container form .checkbox {
+    text-align: left;
+}
+
+.container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #422f88;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamanho do texto aumentado */
+}
+
+/* Estilos para a caixa de mensagem */
+.container form textarea {
+    resize: none;
+    font-size: 16px; /* Tamanho do texto aumentado */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: linear-gradient(to right, #422f88, #9a193d);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries para adaptar layout em telas menores */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

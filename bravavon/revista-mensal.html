@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Mensal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita barras de rolagem */
+        }
+        header {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 12px;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2; /* Definindo um z-index maior para o cabeçalho */
+            cursor: pointer; /* Mudando o cursor para pointer */
+            display: flex; /* Usando flexbox */
+            justify-content: space-between; /* Alinhamento dos itens */
+            align-items: center; /* Centraliza verticalmente */
+            z-index: 2; /* Definindo um z-index maior para o cabeçalho */
+        }
+
+        
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Usando flexbox */
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #ccc;
+        }
+        
+        main {
+            margin-top: 60px; /* Adiciona espaço para o cabeçalho */
+            margin-bottom: 50px; /* Adiciona espaço para o rodapé */
+            padding-top: 0px; /* Adiciona espaço extra para evitar que o conteúdo do iframe seja cortado */
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 110px); /* Altura da janela - altura do cabeçalho - altura do rodapé */
+            border: none;
+            margin-top: 40px; /* Adiciona espaço extra no topo do iframe */
+        }
+        footer {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 2; /* Definindo um z-index maior para o rodapé */
+        }
+    </style>
+</head>
+<body>
+    <header onclick="window.location.href = 'inicio.html';">
+        <h1>Liliana Silva BravAvon</h1>
+        <nav>
+            <ul>
+                <li><a href="revistas.html">Todas as Revistas</a></li>
+                <li><a href="registo.html">Quero ser revendedor(a)</a></li>
+                <li><a href="formulario-contacto.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <iframe src="https://pt.avon.training/brochures/brochura/index.html#page/1" frameborder="0"></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Avon Training. Todos os direitos reservados.</p>
+    </footer>
+
+    
+    <script>
+        // Adicionando evento de clique ao título
+        document.getElementById('titulo').addEventListener('click', function() {
+            // Redirecionando para a página inicio.html
+            window.location.href = 'inicio.html';
+        });
+    </script>
+</body>
+</html>

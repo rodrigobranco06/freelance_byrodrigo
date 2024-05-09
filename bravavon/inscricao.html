@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <style>
+        /* Estilos do layout de duas colunas */
+        .two-column-layout {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center; /* Centraliza o conteúdo na imagem */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px; /* Adiciona um espaço abaixo da imagem */
+        }
+
+        .image-container h2 {
+            margin: 0; /* Remove as margens padrão */
+            padding-bottom: 30px;
+        }
+
+        .image-container p {
+            margin: 0; /* Remove as margens padrão */
+            padding-bottom: 50px;
+        }
+
+        /* Estilizando o título sobre a imagem */
+        .image-container h2 {
+            font-size: 30px;
+            color: #333; /* Cor do título */
+        }
+
+        /* Estilizando o texto sobre a imagem */
+        .image-container p {
+            font-size: 20px;
+            color: #666; /* Cor do texto */
+        }
+
+        /* Aumentando a largura do contêiner do formulário */
+        .form-container {
+            flex: 2; /* Mudando a proporção para 2:1 em relação à imagem-container */
+            padding: 0 40px; /* Espaçamento para o conteúdo do formulário */
+        }
+
+        /* Seus estilos existentes */
+        /* Estilos básicos para a página */
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #ccc;
+        }
+
+        .container {
+            width: 90%; /* Largura aumentada */
+            max-width: 1200px; /* Largura máxima */
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .container form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container form input[type="text"],
+        .container form input[type="email"],
+        .container form input[type="tel"],
+        .container form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .container form .sexo {
+            margin-bottom: 20px;
+        }
+
+        .container form .sexo p {
+            margin-bottom: 5px;
+        }
+
+        .container form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .container form .sexo label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .container form .sexo input[type="radio"] {
+            display: inline-block;
+        }
+
+        .container form .checkbox {
+            text-align: left;
+        }
+
+        .container form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #422f88;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .container form textarea {
+            resize: none;
+            font-size: 16px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; /* Para fixar o rodapé no final da página */
+        }
+    
+        #titulo {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Liliana Silva BravAvon</h1>
+        <nav>
+            <ul>
+                <li><a href="revista-mensal.html">Revista Mensal</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="registo.html">Quero ser revendedor(a)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container two-column-layout">
+        <div class="image-container">
+            <h2>Inscrição</h2>
+            <p>Inscreva-se já gratuitamente na Liliana Silva BravAvon e torne-se uma empresária de sucesso. Ganhe dinheiro com a Avon preenchendo o formulário.</p>
+            <p>Após a submissão aguarde pelo nosso contacto.</p>
+            <img src="img/360_F_271076276_omHDISroOHYP7G1mtoYuIOoLo8JLV1kA.jpg" alt="Imagem">
+        </div>
+        <div class="form-container">
+            <form action="enviar-inscricao.php" method="post">
+                <h2>Formulário de Inscrição</h2>
+                <input type="text" name="nome" placeholder="Nome" required><br>
+                <input type="email" name="email" placeholder="E-mail" required><br>
+                <div class="sexo">
+                    <p>Sexo:</p>
+                    <input type="radio" name="sexo" value="Masculino" id="masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" name="sexo" value="Feminino" id="feminino" required>
+                    <label for="feminino">Feminino</label><br>
+                    <input type="radio" name="sexo" value="Prefiro não divulgar" id="nao-divulgar" required>
+                    <label for="nao-divulgar">Prefiro não divulgar</label>
+                </div>
+                <input type="tel" name="telefone" placeholder="Telefone" required><br>
+                <input type="text" name="morada" placeholder="Morada" required><br>
+                <input type="text" name="cod_postal" placeholder="Código Postal" required><br>
+                <input type="text" name="localidade" placeholder="Localidade" required><br>
+
+                <textarea name="mensagem" placeholder="Mensagem" required></textarea><br>
+                <label><input type="checkbox" name="concorda_privacidade" value="1" required> Concordo com a <a href="politica-privacidade.html" target="_blank">política de privacidade</a></label><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Avon Training. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Adicionando evento de clique ao título
+        document.getElementById('titulo').addEventListener('click', function() {
+            // Redirecionando para a página inicio.html
+            window.location.href = 'inicio.html';
+        });
+    </script>
+</body>
+</html>

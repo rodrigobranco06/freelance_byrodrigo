@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revistas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita barras de rolagem */
+        }
+        header {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex; /* Usando flexbox */
+            justify-content: space-between; /* Alinhamento dos itens */
+            align-items: center; /* Centraliza verticalmente */
+            z-index: 2; /* Definindo um z-index maior para o cabeçalho */
+        }
+
+        
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Usando flexbox */
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #ccc;
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 150px); /* Altura da janela - altura do cabeçalho - altura do rodapé */
+            border: none;
+            margin-top: 100px; /* Deixa espaço para o cabeçalho */
+            margin-bottom: 50px; /* Deixa espaço para o rodapé */
+            z-index: 1; /* Definindo um z-index menor para o iframe */
+        }
+        footer {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 2; /* Definindo um z-index maior para o rodapé */
+        }
+        /* Mudando o cursor para pointer quando passar o mouse sobre o título */
+        #titulo {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Liliana Silva BravAvon</h1>
+        <nav>
+            <ul>
+                <li><a href="revista-mensal.html">Revista Mensal</a></li>
+                <li><a href="revistas.html">Todas as Revistas</a></li>
+                <li><a href="formulario-contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe id="frame" src="https://arp.avon.com/prp/PT/pt/BelezaComLilianaSilvaBravavon" frameborder="0"></iframe>
+
+    <footer>
+        <p>&copy; 2024 Avon Training. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Adicionando evento de clique ao título
+        document.getElementById('titulo').addEventListener('click', function() {
+            // Redirecionando para a página inicio.html
+            window.location.href = 'inicio.html';
+        });
+    </script>
+</body>
+</html>

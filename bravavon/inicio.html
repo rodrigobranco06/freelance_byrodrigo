@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        /* Estilos básicos para a página */
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: auto; /* Altura automática para permitir scroll quando necessário */
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden; /* Esconder a barra de rolagem horizontal */
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #ccc;
+        }
+
+        /* Estilos para o conteúdo principal */
+        .container {
+            width: calc(80% - 150px); /* 80% da largura da janela menos a largura da imagem */
+            margin: auto;
+            padding: 20px;
+            margin-top: 20px; /* Adiciona margem para compensar a altura do cabeçalho */
+            margin-bottom: 20px; /* Adiciona margem inferior para evitar sobreposição com o rodapé */
+            padding-bottom: 20px; /* Adiciona espaço entre o conteúdo principal e o rodapé */
+            display: flex; /* Alinhar os elementos em linha */
+            justify-content: center; /* Alinhar os elementos ao centro */
+
+        }
+
+        .text {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            color: white;
+            padding: 30px;
+            max-width: 100%; /* Limitar a largura do quadrado de texto */
+            display: flex; /* Alinhar os elementos do texto verticalmente */
+            flex-direction: column; /* Empilhar elementos verticalmente dentro do texto */
+            align-items: center; /* Centralizar elementos horizontalmente dentro do texto */
+        }
+
+        .text h1 {
+            margin-bottom: 0; /* Remover a margem inferior do título */
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .text p {
+            margin-bottom: 20px;
+            text-align: center; /* Alinhar o texto ao centro */
+        }
+
+        .image {
+            width: 30%; /* Define a largura da imagem */
+            max-width: 150px; /* Define a largura máxima da imagem */
+            height: auto; /* Mantém a altura proporcional */
+            align-self: center; /* Centralizar verticalmente em relação ao quadrado de texto */
+            margin-left: 20px; /* Adiciona margem à esquerda para separar a imagem do texto */
+
+        }
+
+        .image img {
+            width: 100%; /* Ajusta a largura da imagem para preencher o espaço disponível */
+            height: auto; /* Mantém a proporção original da imagem */
+        }
+
+        /* Estilos para os containers adicionais */
+        .extra-container {
+            width: calc(80% - 150px); /* 80% da largura da janela menos a largura da imagem */
+            margin: auto;
+            padding: 20px;
+            margin-top: 10px; /* Adiciona margem acima do quadrado adicional */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to right, #422f88, #9a193d);
+
+        }
+
+        .extra-text {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .extra-link {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Estilos para os containers adicionais */
+        .extra-container2 {
+            width: calc(80% - 150px); /* 80% da largura da janela menos a largura da imagem */
+            margin: auto;
+            padding: 20px;
+            margin-top: 10px; /* Adiciona margem acima do quadrado adicional */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to right, #422f88, #9a193d);
+
+        }
+
+        .extra-text2 {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .extra-link2 {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Estilos para os containers adicionais */
+        .extra-container3 {
+            width: calc(80% - 150px); /* 80% da largura da janela menos a largura da imagem */
+            margin: auto;
+            padding: 20px;
+            margin-top: 10px; /* Adiciona margem acima do quadrado adicional */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to right, #422f88, #9a193d);
+
+        }
+
+        .extra-text3 {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .extra-link3 {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Estilos para os containers adicionais */
+        .extra-container4 {
+            width: calc(80% - 150px); /* 80% da largura da janela menos a largura da imagem */
+            margin: auto;
+            padding: 20px;
+            margin-top: 10px; /* Adiciona margem acima do quadrado adicional */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to right, #422f88, #9a193d);
+
+        }
+
+        .extra-text4 {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .extra-link4 {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; /* Para fixar o rodapé no final da página */
+            width: 100%;
+            margin-top: 20px; /* Adiciona espaço entre o último container e o rodapé */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Liliana Silva BravAvon</h1>
+        <nav>
+            <ul>
+                <li><a href="revista-mensal.html">Revista Mensal</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="registo.html">Quero ser revendedor(a)</a></li>
+                <li><a href="vantagens.html">Vantagens</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="formulario-contacto.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text">
+            <h1>Seja bem-vindo a Liliana Silva BravAvon!</h1>
+            <p>Adicionar texto.</p>
+        </div>
+        <div class="image">
+            <img src="img/foto_texto.jpg" alt="Imagem">
+        </div>
+    </div>
+
+    <div class="extra-container">
+        <div class="extra-text">
+            <p>Tem interesse em participar na grande equipe de revendedores Avon?! Clique <a class="extra-link" href="registo.html">aqui</a> para saber mais.</p>
+        </div>
+    </div>
+
+    <div class="extra-container2">
+        <div class="extra-text2">
+            <p>Tem interesse em visualizar a revista deste mês?! Clique <a class="extra-link2" href="revista-mensal.html">aqui</a>.</p>
+        </div>
+    </div>
+
+    <div class="extra-container3">
+        <div class="extra-text3">
+            <p>Tem interesse em consultar todas as revistas disponíveis?! Clique <a class="extra-link3" href="revistas.html">aqui</a>.</p>
+        </div>
+    </div>
+
+    <div class="extra-container4">
+        <div class="extra-text4">
+            <p>Tem alguma dúvida?! Clique <a class="extra-link4" href="formulario-contacto.html">aqui</a> para entrar em contacto consigo.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Avon Training. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vantagens</title>
+    <style>
+        /* Estilo para o layout de grade */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
+            gap: 20px; /* Espaçamento entre os itens */
+            padding: 20px; /* Espaçamento interno do container */
+            margin: 0 200px; /* Espaço à esquerda e à direita */
+        }
+
+        .grid-item {
+            text-align: center;
+            padding: 10px;
+            border: none; /* Remova a borda padrão */
+            border-radius: 10px; /* Adicione bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicione sombra */
+            transition: transform 0.3s ease; /* Adicione transição para hover */
+            overflow: hidden; /* Esconda qualquer conteúdo que ultrapasse os limites */
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: white;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px); /* Efeito de levantamento no hover */
+        }
+
+        .grid-item img {
+            width: 100%; /* Largura total do grid-item */
+            height: 100%; /* Altura total do grid-item */
+            object-fit: cover; /* Ajusta a imagem para preencher o espaço disponível */
+            object-position: center; /* Centraliza a imagem */
+        }
+
+        /* Estilos adicionais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Usando flexbox */
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #ccc;
+        }
+
+        footer {
+            background: linear-gradient(to right, #422f88, #9a193d);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 22px;
+        }
+
+        #titulo {
+            cursor: pointer;
+        }
+
+        .after-grid-container {
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: calc(100% - 440px); /* Largura dos três grid-items com 20px de margem cada */
+            margin-left: 200px; /* Margem esquerda igual à margem dos grid-items */
+        }
+
+        .after-grid-container h2 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .after-grid-container p {
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 0;
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .after-grid-container img {
+            max-width: calc(100% - 40px); /* Largura máxima da imagem com espaço de 20px de cada lado */
+            height: auto;
+            margin: 0 auto; /* Centralizar a imagem horizontalmente */
+            display: block; /* Impedir que a imagem tenha margem superior ou inferior */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Liliana Silva BravAvon</h1>
+        <nav>
+            <ul>
+                <li><a href="revista-mensal.html">Revista Mensal</a></li>
+                <li><a href="revistas.html">Todas as Revistas</a></li>
+                <li><a href="registo.html">Quero ser revendedor(a)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Vantagens</h1>
+    <p>A Avon oferece-lhe um conjunto enorme de vantagens e de prémios ao tornar-se uma Revendedora Avon.</p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="img/pessoa_com_telefone.jpg" alt="Imagem 1">
+        </div>
+
+        <div class="grid-item">
+            <h1>Diversidade</h1>
+            <p>Temos cerca de 3.000 produtos ao seu dispor, com uma excelente qualidade/preço</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/pessoa_com_computador.jpg" alt="Imagem 1">
+        </div>
+
+        <div class="grid-item">
+            <h1>Inscrição Gratuita</h1>
+            <p>Não necessita de nenhum investimento inicial para se juntar à Avon! </p>
+            <p>Poderá inscrever-se para seu próprio consumo beneficiando do mesmo desconto comercial.</p>
+            <p>Revista do Revendedor + Material de Trabalho GRÁTIS.</p>
+            <p>Não existe nenhum Kit obrigatório.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/maquilhagem_avon.jpg" alt="Imagem 1">
+        </div>
+
+        <div class="grid-item">
+            <h1>Crie o seu negócio</h1>
+            <p>Torne-se uma empresária de sucesso, com total liberdade para trabalhar onde e quando quiser.</p>
+            <p>Comissões até 35%, de acordo com o escalão de facturação.</p>
+            <p>Sem fidelização, pode desistir quando quiser.</p>
+            <p>Não é obrigado a fazer encomendas todas as campanhas.</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/avon-2-ezgif.com-webp-to-jpg-converter.jpg" alt="Imagem 1">
+        </div>
+
+        <div class="grid-item">
+            <h1>Avon ao seu alcance</h1>
+            <p>Independentemente da sua idade (pode fazer a sua inscrição a partir dos 16 anos), escolaridade ou experiência, a Avon oferece-lhe um mundo de possibilidades ao seu alcance</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/duas-pessoas-pc.jpg" alt="Imagem 1">
+        </div>
+
+        <div class="grid-item">
+            <h1>Prémios e incentivos</h1>
+            <p>Possibilidade de ganhar números produtos gratuitos nas 3 primeiras campanhas, com o nosso Programa de Boas-Vindas (mais de 300€ grátis).</p>
+            <p>Pode ganhar inúmeros prémios e incentivos, como: Viagens, Vouchers, Telemóveis, Tv’s, Computadores, Tablets, entre muitos outros</p>
+            <p>Bónus de 10€ por cada novo Revendedor</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="img/pessoa-maquilhar-ezgif.com-webp-to-jpg-converter.jpg" alt="Imagem 1">
+        </div>
+
+        <div class="grid-item">
+            <h1>Encomendar nunca foi tão fácil</h1>
+            <p>Encomende por telefone, internet, e-mail ou sms.</p>
+            <p>Facilidade de pagamento: tem cerca de 21 dias para pagar a sua encomenda.</p>
+            <p>Portes de entrega gratuitos (nos pontos de recolha fácil), num local da sua preferência</p>
+            <p>100% de Satisfação ao Cliente: podemos fazer trocas ou devoluções</p>
+        </div>
+    </div>
+    
+    <!-- Conteúdo após a grade -->
+    <div class="after-grid-container">
+        <h2>Comissões</h2>
+        <p>Decida quanto quer ganhar</p>
+        <p>Quanto mais encomendar, mais ganha com a sua Avon!</p>
+        <img src="img/comissoes-2023.png" alt="Conteúdo Adicional">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Avon Training. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // Adicionando evento de clique ao título
+        document.getElementById('titulo').addEventListener('click', function() {
+            // Redirecionando para a página inicio.html
+            window.location.href = 'inicio.html';
+        });
+    </script>
+</body>
+</html>
